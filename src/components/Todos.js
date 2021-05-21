@@ -32,9 +32,9 @@ class Todos extends React.Component{
                 <input
                 type="text"
                 name="name"
-                placeholder="type todo"
+                placeholder="Add Todo"
                 ref={input => this.input = input}
-                id="" />
+                id="todos-input" />
                 <button
                 onClick={this.addTodo}>Add todo</button>
                 <List toggle={this.toggleItem} remove={this.removeItem} list={this.props.todos} />
